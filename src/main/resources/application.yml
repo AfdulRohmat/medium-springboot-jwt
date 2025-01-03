@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: auth-api
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/auth_api_springboot_db
+    username: admin
+    password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  jwt:
+    secret: d93d6a5866359c0521d00c8a4ca840fa3577d1d657c5d565380a35f691149593ecf80016ea64a579f541b562f2b7773b3d7fb1c3fa027e61f38ce90e5d2333f3
+    expirationMs: 900000 # 15 minutes
